@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Digital-counter";
+    src: url(fonts/digital-7.ttf);
+}
+*{
+    padding:0;
+    margin:0;
+}
+body{
+ 
+    background-color:rgb(227, 219, 204);
+    text-align: center;
+}
+.heading{
+    font-size:2.5rem;
+    font-family: 'Press Start 2P', cursive;
+    color: blue;
+    margin:3%;
+}
+.best-level{
+    font-family: 'Press Start 2P', cursive;
+    color:cornflowerblue;
+    font-size:1.5rem;
+}
+.icon{
+   position: relative;
+   bottom:0.3rem;
+   color:gold;
+}
+.container{
+    position: relative;
+    display:grid;
+    height:67vh;
+    width:32vw;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    padding:3% 34%;
+  
+}
+
+.red-tile{
+    background-color: crimson;
+    border-radius: 0 0 0 300px;
+    border-top:0.5rem solid black;
+    border-right:0.5rem solid black;
+    border-left:1rem solid black;
+    border-bottom:1rem solid black;
+}
+.red-pressed{
+    background-color: red;
+}
+.green-tile{
+    background-color:darkgreen;
+    border-radius:0 300px  0 0;
+    border-left:0.5rem solid black;
+    border-bottom:0.5rem solid black;
+    border-right:1rem solid black;
+    border-top: 1rem solid black;
+
+}
+.green-pressed{
+    background-color:green;
+
+
+}
+.yellow-tile{
+    background-color: gold;
+    border-radius:0 0 300px 0;
+    border-top:0.5rem solid black;
+    border-left:0.5rem solid black;
+    border-right: 1rem solid black;
+    border-bottom: 1rem solid black;
+
+}
+.yellow-pressed{
+    background-color: yellow;
+
+}
+.blue-tile{
+    background-color: darkblue;
+    border-radius:300px 0 0 0;
+    border-bottom:0.5rem solid black;
+    border-right:0.5rem solid black;
+    border-left:1rem solid black;
+    border-top:1rem solid black;
+}
+.blue-pressed{
+    background-color: blue;
+}
+.pressed{
+    background-color:grey;
+}
+.bg-red{
+    background-image:linear-gradient(0deg,red,crimson);
+}
+.inner-circle{
+    font-size:1rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1rem solid black;
+    top:33%;
+    left:43.5%;
+    background-color: grey;
+    border-radius:100%;
+    height:22vh;
+    width:11vw;
+}
+.curr-level{
+    position: relative;
+    background-color:crimson;
+    border:3.8px solid black;
+    font-size: 1.6rem;
+    margin-top:0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:5vh;
+    width:3vw;
+    font-family:"Digital-counter";
+}
+.curr-level-started{
+    background-color: red;
+    transform: scale(1.03);
+    box-shadow:0.05rem 0.05rem 0.5rem 0 red , -0.05rem -0.05rem 0.5rem 0 red ;
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) { 
+    .container{
+        height:58vh;
+        width:35vw;
+    }
+    .inner-circle{
+        font-size:0.7rem;
+        height:18vh;
+        width:12vw;
+        top:33%;
+        left:43%;
+    }
+
+  }
